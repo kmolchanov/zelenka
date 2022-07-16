@@ -2,28 +2,26 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Basic Project Custom Template</h1>
+    <h1 align="center">Zelenka</h1>
     <br>
 </p>
 
-Yii 2 Basic Project Custom Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
-
-REQUIREMENTS
+Установка
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 5.6.0.
+---
+* Сделать базу данных для приложение
+* git clone git@github.com:kmolchanov/zelenka.git .
+* Скопировать config/db.php в config/db-local.php
+* В файле config/db-local.php указать нужные данные для созданной базы данных
+* Запустить ./deploy.sh (Либо выполнить команды из deploy.sh вручную)
+---
 
-INSTALLATION
+Использование
 ------------
 
-### Install via Composer
+Получить файл из сети<br>
+`./yii order/update-net https://zelenka.ru/sample/orders.json`
 
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-composer create-project --prefer-dist kmolchanov/yii2-app-basic-custom basic
-~~~
+Выдать информацию о заказе<br>
+`./yii order/info [order-id]`
