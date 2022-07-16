@@ -27,8 +27,8 @@ $user = file_exists(__DIR__ . '/user-local.php') ?
     ) : require(__DIR__ . '/user.php');
 
 $config = [
-    'id' => 'basic-custom-console',
-    'name' => 'Basic Custom',
+    'id' => 'zelenka-console',
+    'name' => 'Zelenka',
     'language' => 'ru-RU',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
